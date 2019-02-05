@@ -12,6 +12,10 @@ It is designed to send and recive data from epsolar charge controllers to a Sign
 The xr_usb_serial_common_1a driver needs to be installed as per instutions in folder.
 Test by plugging in the USB cable from epsolartracer
 
+ pip install  -U pymodbus 
+
+I need some feed back to make this all work for other people.. 
+
 "ls /dev/tty*" 
 
 You should see.
