@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/david/.cache/gnome-builder/install/sk-plugin-python-demo/host
+app-id=
+postbuild=
+prebuild=
+default=true

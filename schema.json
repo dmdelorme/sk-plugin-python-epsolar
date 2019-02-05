@@ -1,0 +1,166 @@
+{
+    "type": "object",
+    "properties": {
+      "devices": {
+        "type": "array",
+        "title": "The Devices",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "Charging limit voltage": {
+              "type": "number",
+              "default": 15
+            },
+            "Float voltage": {
+              "type": "number",
+              "default": 13
+            },
+            "Power component temperature upper limit": {
+              "type": "number",
+              "default": 85
+            },
+            "Boost duration": {
+              "type": "number",
+              "default": 120
+            },
+            "Controller inner temperature upper limit": {
+              "type": "number",
+              "default": 855
+            },
+            "Equalization charging cycle": {
+              "type": "number",
+              "default": 30
+            },
+            "Charging percentage": {
+              "type": "number",
+              "default": 100
+            },
+            "Equalize duration": {
+              "type": "number",
+              "default": 120
+            },
+            "High Volt.disconnect": {
+              "type": "number",
+              "default": 16
+            },
+            "Management modes of battery charging and discharging": {
+              "type": "number",
+              "default": 0,
+              "enum": [
+                0,
+                1
+              ],
+              "enumNames": [
+                "voltage compensation",
+                "SOC"
+                ]
+            },
+            "Power component temperature upper limit recover": {
+              "type": "number",
+              "default": 75
+            },
+            "Controller inner temperature upper limit recover": {
+              "type": "number",
+              "default": 75
+            },
+            "Low voltage reconnect": {
+              "type": "number",
+              "default": 12
+            },
+            "Under voltage recover": {
+              "type": "number",
+              "default": 12
+            },
+            "Default Load On/Off in manual mode": {
+              "type": "number",
+              "default": 1
+            },
+            "Discharging limit voltage": {
+              "type": "number",
+              "default": 11
+            },
+            "Low voltage disconnect": {
+              "type": "number",
+              "default": 11.5
+            },
+            "Battery Capacity": {
+              "type": "number",
+              "default": 150
+            },
+            "Boost reconnect voltage": {
+              "type": "number",
+              "default": 13
+            },
+            "Battery temperature warning lower limit": {
+              "type": "number",
+              "default": -40
+            },
+            "Equalization voltage": {
+              "type": "number",
+              "default": 14
+            },
+            "Temperature compensation coefficient": {
+              "type": "number",
+              "default": 3
+            },
+            "Line Impedance": {
+              "type": "number",
+              "default": 0
+            },
+            "Battery rated voltage code": {
+              "type": "number",
+              "default": 0,
+              "enum": [
+                0,
+                1,
+                2
+              ],
+              "enumNames": [
+                "Auto",
+                "12 V",
+                "24 V"
+              ]
+            },
+            "Discharging percentage": {
+              "type": "number",
+              "default": 80
+            },
+            "Under voltage warning": {
+              "type": "number",
+              "default": 12
+            },
+            "Battery temperature warning upper limit": {
+              "type": "number",
+              "default": 65
+            },
+            "Battery Type": {
+              "type": "number",
+              "enum": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "enumNames": [
+                "UserDefined",
+                "Sealed",
+                "Gel",
+                "Flooded"
+              ]
+            },
+            "Over voltage reconnect": {
+              "type": "number",
+              "default": 15
+            },
+            "Boost voltage": {
+              "type": "number",
+              "default": 14
+            }
+          }
+        }
+      }
+    }
+  }
