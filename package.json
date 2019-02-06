@@ -1,7 +1,7 @@
 {
   "name": "sk-plugin-python-epsolar",
   "version": "1.0.0",
-  "description": "Demo Signal K Node server plugin that uses Python",
+  "description": "EPsolar Signal K Node server",
   "main": "index.js",
   "keywords": [
     "signalk-node-server-plugin"

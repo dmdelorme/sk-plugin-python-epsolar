@@ -27,13 +27,8 @@ datafile = 'sk-plugin-python-epsolar.json'
 def sigterm_handler(signal, frame):
     running = False
     sleep(1)
-    # processes[-1].terminate()
-    # sleep(1)
-    # for item in processes:
-      
-    #   item.join() 
     sys.stderr.write("exitsignals")
-    # sys.stderr.write('\n')
+    sys.stderr.write('\n')
     sys.stderr.flush()
     sys.exit(0)
 signal.signal(signal.SIGTERM, sigterm_handler)
@@ -89,7 +84,7 @@ def readclientconfig(client):
       tmp1.update({reg.name : int(client.read_input(reg.name))})
       clientconfig.update(tmp1)
       #print(tmp1)
-    # sync_date = datetime.datetime.now()
+    
     # print (unitid)
     clientconfig.update({'id': unitid})
     return clientconfig
@@ -102,7 +97,8 @@ def setupclient(client,data):
   # print 'devicelist' ,devicelist
   unitid = getunitid(client) 
   # print unitid
-  #client.write_rtc(sync_date)
+  sync_date = datetime.datetime.now()
+  client.write_rtc(sync_date)
   newunitid = True
   
   for item in data['devices']:
@@ -141,7 +137,7 @@ def getunitid(client):
   return unitid
 
 def readunit(client):
-#read epsolar and write sk update to local host. 
+#read epsolar and write sk update to local host this will start a daemon for each device. 
   while running == True:
     try:
       timestamp = strftime("%Y-%m-%dT%H:%M:%S.000Z", gmtime())
