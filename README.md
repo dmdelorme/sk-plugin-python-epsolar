@@ -13,16 +13,17 @@ https://github.com/SignalK/sk-plugin-python-demo
 ![epsolar tracer BN](url)
 
 It is designed to send and recive data from epsolar charge controllers several versions to a SignalK server.
-### The xr_usb_serial_common_1a driver needs to be installed as per instutions in folder.
+### The xr_usb_serial_common driver needs to be installed as per instutions in folder.
+![Exar driver web page](https://www.exar.com/design-tools/software-drivers)
 
-![Current xr_usb_serial driver](https://www.exar.com/content/document.ashx?id=21651)
+![Link to current xr_usb_serial driver](https://www.exar.com/content/document.ashx?id=21651)
 
 Test by plugging in the USB cable from epsolartracer
 - `ls /dev/tty*`
 
 You should see.
 
-- `/dev/ttyXRUSB0` to 3 depending on the number of controlers. 
+- `/dev/ttyXRUSB[0 to 3]` depending on the number of controlers. 
 
 Install the Modbus python module
 - ` pip install  -U pymodbus` 
