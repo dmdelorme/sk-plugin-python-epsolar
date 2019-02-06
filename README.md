@@ -1,4 +1,5 @@
-# This work is based on several other peoples work
+# sk-plugin-python-epsolar
+## This work is based on several other peoples work
 https://github.com/riptideio/pymodbus
 
 https://github.com/kasbert/epsolar-tracer
@@ -25,8 +26,6 @@ Install the Modbus python module
 
 I need some feed back to make this all work for other people.. 
 
-
-# sk-plugin-python-epsolar
 Install all needed python modules. It been a while so give me feed back on this.
 I belive pymodbus, pluse what ever is included in the pulgin.py.
 Demonstration of a SK server plugin in Python
